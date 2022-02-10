@@ -2,9 +2,9 @@
 
 A sample project illustrating an issue with splash screen behavior when restoring after process death.
 
-The project contains two Activities: MainActivity and SecondActivity. MainActivity is the launcher and consists of a single button that opens SecondActivity. 
+The project contains three Activities: MainActivity, SecondActivity and RoutingActivity. RoutingActivity is the launcher and can handle any routing or permission checks with the splash screen before launching the MainActivity. MainActivity consists of a single button that opens SecondActivity. 
 
-To reproduce the issue after process death:
+To reproduce the issue if do not have the Routing Activity after process death:
 
 1. Build and run the app on an Android 12 device. Splash screen with yellow background and a chat icon will be shown (chat icon is clipped, but that's irrelevant to this issue)
 2. Tap the button on MainActivity to open SecondActivity
